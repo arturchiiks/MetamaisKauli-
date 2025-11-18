@@ -1,0 +1,23 @@
+# Metamais Kauliņš - Spēle
+
+## Spēles apraksts
+Vienkārša kauliņu spēle 2-4 spēlētājiem.
+
+## Spēles noteikumi
+- Met kauliņu pārmaiņus
+- Pirmais, kurš sasniedz 50 punktus, uzvar
+- Ja izmet 1, zaudē visus šīs kārtas punktus
+
+## Prasību specifikācija
+### Funkcionālās prasības:
+1. Spēlētāju izvēle (2-4)
+2. Kauliņa mešana
+3. Punktu skaitīšana
+4. Uzvarētāja noteikšana
+
+## Struktūrskice
+
+## Testpiemēri
+1. Kauliņš metās no 1 līdz 6
+2. Punkti pareizi saskaitās
+3. Uzvarētājs tiek pareizi noteikts
