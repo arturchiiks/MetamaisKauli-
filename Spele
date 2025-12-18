@@ -1,23 +1,40 @@
-# Metamais Kauliņš - Spēle
+Kauliņš - spēled
 
-## Spēles apraksts
-Vienkārša kauliņu spēle 2-4 spēlētājiem.
+SPĒLES APRAKSTS
+Spēle “Kauliņa piedzīvojums” ir vienkārša datorspēle vienam spēlētājam.
+Spēlētājs pārvietojas pa spēles lauciņiem, metot seššķautņu kauliņu.
+Spēles mērķis ir sasniegt finiša lauciņu.
+Daži lauciņi dod bonusus, citi – sodus.
 
-## Spēles noteikumi
-- Met kauliņu pārmaiņus
-- Pirmais, kurš sasniedz 50 punktus, uzvar
-- Ja izmet 1, zaudē visus šīs kārtas punktus
+PRASĪBU SPECIFIKĀCIJA
 
-## Prasību specifikācija
-### Funkcionālās prasības:
-1. Spēlētāju izvēle (2-4)
-2. Kauliņa mešana
-3. Punktu skaitīšana
-4. Uzvarētāja noteikšana
+Funkcionālās prasības:
+1. Spēlei jāļauj mest kauliņu ar vērtībām no 1 līdz 6.
+2. Spēlētāja pozīcija jāpārvieto atbilstoši kauliņa metienam.
+3. Spēlei jānosaka uzvara, ja sasniegts finišs.
+4. Soda lauciņi liek pārvietoties atpakaļ.
+5. Bonusa lauciņi dod papildu gājienu.
 
-## Struktūrskice
+Nefunkcionālās prasības:
+1. Spēlei jābūt viegli saprotamai.
+2. Spēlei jādarbojas bez kļūdām.
 
-## Testpiemēri
-1. Kauliņš metās no 1 līdz 6
-2. Punkti pareizi saskaitās
-3. Uzvarētājs tiek pareizi noteikts
+STRUKTŪRSKICE
+- Spēlētājs
+  - Pozīcija
+- Kauliņš
+  - Metiena funkcija
+- Spēles lauks
+  - Parastie lauciņi
+  - Soda lauciņi
+  - Bonusa lauciņi
+- Spēles loģika
+  - Gājiena apstrāde
+  - Uzvaras noteikšana
+
+TESTPIEMĒRU KOPA
+1. Met kauliņu → rezultāts no 1 līdz 6.
+2. Metiens 4 → spēlētājs pārvietojas par 4 lauciņiem.
+3. Uziet soda lauciņu → pārvietošanās atpakaļ.
+4. Uziet bonusa lauciņu → papildu gājiens.
+5. Sasniedz finišu → spēle paziņo uzvaru.
